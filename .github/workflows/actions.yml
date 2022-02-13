@@ -1,0 +1,18 @@
+name: 'Cypress tests'
+
+on: [ push ]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+
+      - name: Install node modules
+        run: npm install
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Run Cypress
+        run: npm cypress:run-desktop

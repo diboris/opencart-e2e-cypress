@@ -10,13 +10,6 @@ npm install
 npm run cypress:run-desktop
 ```
 
-Run in mobile mode
-
-```shell
-npm install
-npm run cypress:run-mobile
-```
-
 ## Reports
 
 HTML reports are generated to **cypress/reports** folder. 

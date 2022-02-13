@@ -15,4 +15,4 @@ jobs:
         run: npm run lint
 
       - name: Run Cypress
-        run: npm cypress:run-desktop
+        run: npm run cypress:run-desktop
